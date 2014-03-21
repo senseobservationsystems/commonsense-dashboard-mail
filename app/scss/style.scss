@@ -59,7 +59,7 @@ table {
 /* Weekly Report specific styling */
 
 body, #background-table {
-  background-color: #c2ebe9;
+  //background-color: #7dcec9;
 }
 
 #contentTable {
@@ -67,7 +67,6 @@ body, #background-table {
   max-width: 600px;
   background-color: #ffffff;
 }
-#header, #footer {
-  background-color: #497774;
+#header, #content, #footer {
+  padding: 10px 10px 10px 10px;
 }
-
