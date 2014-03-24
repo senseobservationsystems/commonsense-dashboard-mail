@@ -20,7 +20,7 @@ module.exports = function (grunt) {
             //main email file
             email: 'index.html',
             //enter here yout production domain
-            distDomain: 'http://www.commonsense-dashboard.com/',
+            distDomain: 'http://assets.commonsense-dashboard.com/',
             //this is the default development domain
             devDomain: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/'
         },
