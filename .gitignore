@@ -1,3 +1,4 @@
 node_modules
 .sass-cache
 app/css
+*.DS_Store
