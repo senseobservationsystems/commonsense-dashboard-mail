@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>weekly report mail</title>
+    <title>Welcome to CommonSense</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
@@ -53,11 +53,11 @@
                       <p>You requested a spot in our beta program. We've got good news: You're in!</p>
 
                       <div style="width:300px;margin:0 auto"><!--[if mso]>
-                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://commonsense-dashboard.com/?todo=addlink" style="height:50px;v-text-anchor:middle;width:300px;" arcsize="10%" stroke="f" fillcolor="#355553">
+                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ registerLinkWithToken }}" style="height:50px;v-text-anchor:middle;width:300px;" arcsize="10%" stroke="f" fillcolor="#355553">
                           <w:anchorlock/>
                           <center>
                         <![endif]-->
-                        <a href="http://commonsense-dashboard.com/?todo=addlink"
+                        <a href="{{ registerLinkWithToken }}"
                       style="background-color:#355553;border-radius:5px;color:#ffffff;display:inline-block;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:300px;-webkit-text-size-adjust:none;">Create your account now!</a>
                         <!--[if mso]>
                           </center>
@@ -66,8 +66,8 @@
                       </div>
                       <p>
                         <small>
-                        If this button doesn't work try copy pasting this in your browser:
-                        https://www.commonsense-dashboard.com/#/signup?token=179e6896eddc91c1bd69efa78b0c0bd2&email=jg+cs5@sense-os.nl
+                        Doesn't work? try copy pasting this in your browser:
+                        {{ registerLinkWithToken }}
                         </small>
                       </p>
                       <p>We love to hear about your experiences! Send your feedback to:<br/>
@@ -117,7 +117,8 @@
             <tr>
               <td></td>
               <td>
-                The CommonSense platform is brought to you by <a href="http://sense-os.nl">Sense</a>
+                <a href="https://www.commonsense-dashboard.com" target="_blank">CommonSense Dashboard</a> is brought to you by <a href="http://sense-os.nl">Sense</a><br/>
+                Follow us on <a href="https://twitter.com/SenseHQ" target="_blank">Twitter</a> or <a href="https://www.facebook.com/SenseObservationSystems" target="_blank">Facebook</a>
               </td>
               <td></td>
             </tr>

@@ -68,6 +68,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= paths.src %>/<%= paths.email %>',
+                    '<%= paths.src %>/*.html',
                     '<%= paths.src %>/css/{,*/}*.css',
                     '<%= paths.src %>/<%= paths.images %>/{,*/}*.{png,jpg,jpeg,gif}'
                 ]
@@ -131,8 +132,10 @@ module.exports = function (grunt) {
                 baseUrl: '<%= paths.distDomain %>'
             },
             dist: {
-                src: '<%= paths.src %>/<%= paths.email %>',
-                dest: '<%= paths.dist %>/<%= paths.email %>'
+                //src: '<%= paths.src %>/<%= paths.email %>',
+                //dest: '<%= paths.dist %>/<%= paths.email %>'
+                src: '<%= paths.src %>/*.html',
+                dest: '<%= paths.dist %>/'
             }
         },
 
