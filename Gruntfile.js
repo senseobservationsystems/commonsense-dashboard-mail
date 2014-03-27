@@ -18,7 +18,9 @@ module.exports = function (grunt) {
             //sources
             src: 'app',
             //main email file
-            email: 'index.html',
+            //email: 'index.html',
+            //email: 'betaFull.html',
+            email: grunt.option('file') || 'index.html',
             //enter here yout production domain
             distDomain: 'http://assets.commonsense-dashboard.com/',
             //this is the default development domain
@@ -132,10 +134,8 @@ module.exports = function (grunt) {
                 baseUrl: '<%= paths.distDomain %>'
             },
             dist: {
-                //src: '<%= paths.src %>/<%= paths.email %>',
-                //dest: '<%= paths.dist %>/<%= paths.email %>'
-                src: '<%= paths.src %>/*.html',
-                dest: '<%= paths.dist %>/'
+                src: '<%= paths.src %>/<%= paths.email %>',
+                dest: '<%= paths.dist %>/<%= paths.email %>'
             }
         },
 
@@ -193,6 +193,15 @@ module.exports = function (grunt) {
         'compass:dist',
         'premailer:dist',
         'connect:dist'
+    ]);
+
+    grunt.registerTask('buildMisc', [
+      'clean',
+      'imagemin',
+      'compass:dist'
+    ]);
+    grunt.registerTask('buildHtml', [
+      'premailer:dist'
     ]);
 
     grunt.registerTask('send', [
