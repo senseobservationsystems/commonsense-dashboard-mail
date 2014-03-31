@@ -7,3 +7,4 @@ grunt buildHtml --file=emailExists.html
 grunt buildHtml --file=forgotPassword.html
 grunt buildHtml --file=sharingEnd.html
 grunt buildHtml --file=sharingRequest.html
+grunt buildHtml --file=sharingRequestUnknownEmail.html
