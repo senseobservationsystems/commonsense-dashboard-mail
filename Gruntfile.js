@@ -201,6 +201,7 @@ module.exports = function (grunt) {
       'compass:dist'
     ]);
     grunt.registerTask('buildHtml', [
+      'compass:dist',
       'premailer:dist'
     ]);
 
